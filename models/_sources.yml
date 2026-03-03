@@ -25,3 +25,15 @@ sources:
         description: One record per SKU for items sold in stores
       - name: raw_supplies
         description: One record per supply per SKU of items sold in stores
+  - name: jaffle_shop
+    database: RAW
+    schema: JAFFLE_SHOP
+    tables:
+      - name: customers
+      - name: orders
+
+  - name: stripe
+    database: RAW
+    schema: STRIPE
+    tables:
+      - name: payment
